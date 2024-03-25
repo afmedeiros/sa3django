@@ -12,15 +12,6 @@
             text-align: center;
         }
 
-        .lista{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F2D682;
-            text-align: justify;
-            align-items:flex-start
-        }
-
         .menu{
             justify-content: space-between;
             font-size: x-large;
@@ -84,6 +75,35 @@
             vertical-align: center;
             align-items: center;   
         }
+        .album {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:medium;
+            vertical-align: top;
+            display: inline-block;
+            max-width: 100%;
+            margin-inline: 10px;
+            color: rgb(35, 35, 35);
+            width: 100%;
+
+        }
+
+        .meio {
+            overflow: hidden;
+            display: block;
+        }
+
+        .diva {
+            display: inline;
+            float: left;
+            height:fit-content;
+            width: 100%;
+            }
+        
+        .divb {
+            height: fit-content;
+            width: 30%;
+            float: right;
+        }
 
     </style>
 </head>
@@ -91,9 +111,12 @@
     {% include "app_aula/menu.html" %}
 <br><br><br>
 <div>
-    <div class="Álbum">
-        <img src="{%static 'images/foto1.jpeg'%}" alt="Image" height="550"/>
+    <div class="album">
+        <div class="meio">
+        <div class="diva">
+        <div class="divb"><img src="{%static 'images/foto1.jpeg'%}" alt="Image" height="330"/></div>
         <h1>Decretos Reais, Vol. 1</h1>
+        
         <p>
         <b>'Decretos Reais vol. 1'</b>Resume tudo o que fez de Marília Mendonça um sucesso inescapável
             EP póstumo da cantora é um compilado imaginativo do que se convencionou chamar de brega
@@ -125,8 +148,10 @@
             <li><a href="https://youtu.be/1_cXtpgG-EQ?si=UX8-rfM_cGHzLpg0"target="_blank">3 Não Era Pra Ser Assim</a></li>
             <li><a href="https://youtu.be/6feNceQ_EZc?si=sa-h3KJ8GTNsw_Uj"target="_blank">4 Sendo Assim/Muito Estranho</a></li>
         </ul> 
+    </div>
         
-        <img src="{%static 'images/foto2.jpeg'%}" height="550"/>
+    <div class="diva">
+        <div class="divb"><img src="{%static 'images/foto2.jpeg'%}" height="330"/></div>
         <h1>Decretos Reais, Vol. 2</h1>
         <p><b>Devretos Reais, Vol. 2,</b>Seguindo o mesmo formato da primeira parte lançada em julho, o EP “Decretos Reais - Vol.2” conta com 6 regravações de grandes
             canções escolhidas pela cantora e os vídeos foram extraídos da live “Serenata”, realizada em maio de 2021.
@@ -135,16 +160,18 @@
             “Café da manhã” (Roberto Carlos), “Nem é bom lembrar” (Zezé di Camargo & Luciano)  e “Uma vida a mais” 
             (Maiara & Maraisa).
         </p>   
-        <ul class="lista">
+        <ul>
             <li><a href="https://youtu.be/tI55Zu9uZEM?si=lAvgG_ryIE0bTlVw"target="_blank">1 Leão</a></li>
             <li><a href="https://youtu.be/GdyImb_cdTE?si=gcSBZCkiV6WRKQSu"target="_blank">2 Pra Falar a Verdade</a></li>
             <li><a href="https://youtu.be/wsV1RHXqihQ?si=k7TsyUZfHQMJksYO"target="_blank">3 Morango do Nordeste</a></li>
             <li><a href="https://youtu.be/Rk5Nh-pHTk8?si=_705TzzCE9PL_-AR"target="_blank">4 Café da Manhã</a></li>
             <li><a href="https://youtu.be/MJghd2STQgM?si=v08S8hJcb0wUGsyD"target="_blank">5 Nem E Bom Lembrar</a></li>
-            <li><a href="https://youtu.be/tIs8nuvR8oM?si=SVUpoL5aRN79F_8C"target="_blank">6 Uma Vida a Mais</a></li>
-        </ul> 
-           
-        <img src="{%static 'images/foto3.jpeg'%}" height="550"/>
+        </ul>
+    </div>
+
+    <div class="diva">
+        <div class="divb">
+        <img src="{%static 'images/foto3.jpeg'%}" height="330"/></div>
         <h1>Decretos Reais</h1>
         <p>“Uma vez pela rainha escrito, não poderá ser apagado”. Após o sucesso do audiovisual
             “Decretos Reais” , primeiro álbum póstumo de Marília Mendonça, uma nova etapa de homenagens
@@ -164,7 +191,11 @@
             <li><a href="https://youtu.be/E4GM5j4w0t0?si=BtALYoFMYYbionz5"target="_blank">Flor E O Beija Flor</a></li>
             <li><a href="https://youtu.be/OIgFeGGqnLs?si=2yDR6l67c0ItWgYi"target="_blank">Álbum Completo</a></li>
         </ul> 
-            <img src="{%static 'images/foto4.jpeg'%}" height="550"/>
+    </div>
+
+    <div class="diva">
+        <div class="divb">
+            <img src="{%static 'images/foto4.jpeg'%}" height="330"/></div>
             <h1>Manuscritos da Rainha</h1>
             <p>Marilia Mendonça de menina madura à uma mulher a frente de seu tempo. Predestinada a ser a maior de sua 
                 geração, em incompletos  sete annos de carreira como cantora deixa um legado imensurável, como foram
@@ -180,9 +211,11 @@
                 e o quanto o Brasil é grato por ter ouvido sua voz!
             </p>
             <li>Com 12.049.824 ouvintes mensais no Spotify.</li>
-            <li><a href="https://open.spotify.com/artist/1yR65psqiazQpeM79CcGh8?si=j2-ViRylQmCZ0s5lpr39Mg"target="_blank">Ouça no Spotify</a></li>  
+            <li><a href="https://open.spotify.com/artist/1yR65psqiazQpeM79CcGh8?si=j2-ViRylQmCZ0s5lpr39Mg"target="_blank">Ouça no Spotify</a></li>
+    </div>
+</div>
              <h1>OS DECRETOS REAIS ESTÃO E SEMPRE ESTARÃO NOS PEQUENOS DETALHES, BASTA PROCURÁ-LOS.</h1>
-            <img src="{%static 'images/foto5.jpeg'%}" height="550"/>
+            <img src="{%static 'images/foto5.jpeg'%}" height="330"/>
             <h1>"Decretos Reais, Vencedor do Grammy Latino 2023 de Melhor Álbum de Música Setraneja"</h1>
             {% include "app_aula/footer.html" %}
         </div>
