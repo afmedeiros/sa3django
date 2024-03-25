@@ -103,18 +103,17 @@
     border-bottom-right-radius: 20px;
     }
 
-.div2 {
+    .div2 {
 
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    padding: 5% 0 5%;
-    max-width: 200px;
-    margin-block-end: 10px;
-    align-content: space-between;
-    /* border: 1px solid rgb(249, 22, 14); */
-    margin-inline: 20px;
-
-
-}
+        padding: 4% 0 4%;
+        width: 330px;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        margin-block-end: 100px;
+        align-content: space-between;
+        margin-inline: 20px;
+    }
 
     .container {
         display: flex;
