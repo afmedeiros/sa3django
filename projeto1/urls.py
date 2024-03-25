@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
-from app_aula.views import func1, sobre, discografia
+from app_aula.views import func1, sobre, discografia, menu
 
 
 urlpatterns = [
@@ -25,5 +25,6 @@ urlpatterns = [
     path('home/', func1),
     path('sobre/', sobre),
     path('discografia/', discografia),
+    path('menu/', menu),
 ]
 

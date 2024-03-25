@@ -11,3 +11,6 @@ def sobre(request):
 
 def discografia(request):
     return render(request,"app_aula/discografia.html")    
+
+def menu(request):
+    return render(request,"app_aula/menu.html")    
