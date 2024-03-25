@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Marília Mendonça</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        #main {
+            max-width: 2000px;
+            margin: 0 auto;
+            background-color: #f5f5f6;
+        }
+        
+        .text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+     
+        }
+        
+        #title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        #img-top {
+            center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+        }
+
+        #img-div {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: #333;
+        }
+        
+        #tribute-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #21e37f;
+            border: 1px solid #ddd;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: #444;
+        }
+        
+        .p {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .desativado {
+            color: #999;
+        }
+        
+        #tribute-link {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        #tribute-link:hover {
+            text-decoration: underline;
+        }
+
+        .div1 {
+            display: flex;
+            align-items: flex-end;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 110px;
+            padding: 0 0 3%;
+            margin: 0 auto;
+            text-align: right;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .div2 {
+
+            padding: 4% 0 4%;
+            width: 300px;
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+            margin-block-end: 100px;
+            align-content: space-between;
+            margin-inline: 20px;
+        }
+
+        .div3 {
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 100px;
+            padding: 0 0 3%;
+            margin: 0 auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            padding: 10px;
+            margin-bottom: 10px;
+            vertical-align: top;
+            display: flex
+        }
+        
+        .item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .imagediv {
+            max-width: 30%;
+            height: auto;
+            vertical-align: top;
+            display: inline-block;
+            align-items: flex-start;
+            margin-inline: 10px;     
+        }
+
+        .imageheader {
+            max-width: 80%;
+            height: auto;
+            vertical-align: top;
+            align-items: start;
+            margin-inline: 10px;     
+        }
+
+        .imagefooter {
+            max-width: 9%;
+            height: auto;
+            vertical-align: center;
+            align-items: center;   
+        }
+
+        .textdiv {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:x-large;
+            vertical-align: top;
+            display: inline-block;
+            max-width: 100%;
+            margin-inline: 10px;
+            color: rgb(35, 35, 35);
+        }
+
+        #botoes{
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            cursor: pointer;
+            border: 3px solid;
+            padding: 0.25em 0.5em;
+            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            
+        }
+
+
+        #botoes:hover  {
+            background-color: rgb(224, 222, 222);
+            
+        }
+
+        #botoes.active {
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
+        }
+
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        
+        
+        <div style ="background-image: url('{%static 'images/background.jpg'%}');">
+            <div class="div1">
+                <img src="{%static 'images/header.png'%}" alt="Image" class="imageheader">
+                <div class="div2">
+                    <button id="botoes" onclick="window.location.href='/discografia'">DISCOGRAFIA</button>
+                    <button id="botoes" onclick="window.location.href='/sobre'">SOBRE</button>
+                </div>   
+            </div>
+            
+         
+<div class="container">
+    <div class="item">
+        <div class="textdiv" style="text-align: justify;">
+        <p><br><br>Marília Mendonça era muito mais do que uma cantora sertaneja de sucesso. Ela é uma verdadeira obra de arte em constante evolução, uma síntese vibrante da vida e da carreira em cada acorde, em cada verso de suas músicas. Sua jornada no mundo da música começou como compositora, criando letras que ecoavam os sentimentos mais profundos e autênticos do cotidiano.</p>
+        </div>
+        <img src="{%static 'images/marilia1.png'%}" alt="Image" class="imagediv">
+    </div>
+    <div class="item">
+        <div class="textdiv" style="text-align: justify;">
+        <p><br><br>Com sua voz marcante e sua presença magnética, ela transformou suas composições em sucessos instantâneos, conquistando o coração do Brasil e além. A trajetória de Marília Mendonça é um testemunho de resiliência e determinação. Ela enfrentou desafios e superou obstáculos para alcançar o estrelato, sempre fiel à sua autenticidade e à sua identidade musical.</p>                
+        </div>
+        <img src="{%static 'images/marilia2.png'%}" alt="Image" class="imagediv">
+     </div>
+    <div class="item">
+        <div class="textdiv" style="text-align: justify;">
+        <p><br><br>Seu estilo único misturava o tradicional com o contemporâneo, criando uma sonoridade que ressoa com pessoas de todas as idades e origens. Além de sua voz poderosa e de suas letras comoventes, Marília Mendonça era e ainda é também um ícone de empoderamento feminino. </p>
+        </div>
+        <img src="{%static 'images/marilia3.png'%}" alt="Image" class="imagediv">
+        </div>
+    </div>
+    <div class="div3">
+        <img src="{%static 'images/footer.png'%}" alt="Image" class="imagefooter">
+    </div>
+</div>
+</div>   
+</main>
+</body>

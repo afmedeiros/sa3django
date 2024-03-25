@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            body {
+            background-image: url(static/images/backgroundsobre2.jpg); /* Adjust path as needed */
+            background-repeat: no-repeat; /* Control image repetition (optional) */
+            background-position: center; /* Set image position (optional) */
+            background-size: cover; /* Resize image to fit (optional) */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2D682;
+            }
+
+                #tribute-info {
+            padding: 25px;
+            /* border: 1px solid #ddd; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:large;
+            vertical-align: top;
+            display: inline-block;
+            max-width: 100%;
+            margin-inline: 50px;
+            color: rgb(35, 35, 35);
+            text-align: justify;
+                        
+            }
+            .imageheader {
+            max-width: 80%; /* Ajuste a largura da imagem conforme necessário */
+            height: auto;
+            vertical-align: top;
+            align-items: start;
+            /* margin-left: 10px;   */
+            margin-inline: 10px;     
+        }
+
+        
+        .div1 {
+            display: flex;
+            align-items: flex-end;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 110px;
+            padding: 0 0 3%;
+            margin: 0 auto;
+            text-align: right;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .div2 {
+
+            padding: 4% 0 4%;
+            width: 300px;
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+            margin-block-end: 100px;
+            align-content: space-between;
+            margin-inline: 20px;
+        }
+
+        .div3 {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100px;
+        padding: 0 0 3%;
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        }
+
+        .imagefooter {
+            max-width: 8%; /* Ajuste a largura da imagem conforme necessário */
+            height: auto;
+            vertical-align: center;
+            align-items: center;   
+        }
+
+        
+        #botoes{
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            cursor: pointer;
+            border: 3px solid;
+            padding: 0.25em 0.5em;
+            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            
+        }
+
+
+        #botoes:hover  {
+            background-color: rgb(224, 222, 222);
+            
+        }
+
+        #botoes.active {
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div style ="background-image: url('{%static 'images/headersobre3.png'%}');">
+            <div class="div1">
+                <img src="{%static 'images/header.png'%}" alt="Image" class="imageheader">
+                <div class="div2">
+                <button id="botoes" onclick="window.location.href='/home'">HOME</button>
+                <button id="botoes" onclick="window.location.href='/discografia'">DISCOGRAFIA</button>
+                </div>   
+            </div>
+        </div>
+    <div id="tribute-info">
+
+  
+    <br><h3>Marília Dias Mendonça foi uma cantora, compositora e instrumentista brasileira. Reconhecida como líder do subgênero musical feminejo — sertanejo por mulheres —, sua contribuição para o empoderamento feminino revolucionou o universo da música sertaneja entre as décadas de 2010 e 2020.</h3>
+        <br><b>Nascimento:</b> 22 de julho de 1995, Cristianópolis, Goiás
+        <br><b>Falecimento:</b> 5 de novembro de 2021, Piedade de Caratinga, Minas Gerais</b>
+        <br><b>Filhos:</b> Léo Dias Mendonça Huff</b>
+        <br><b>Filmes:</b> Ivete Live Experience</b>
+        <br><b>Pais:</b> Ruth Dias, Mário Mendonça</b>
+        </h1>
+        <br><h2>A seguir a linha do tempo de Marília Mendonça</h2>
+        
+            <ul>
+                <li><b>1995</b> - 22 de julho: Marília Dias Mendonça nasce em Cristianópolis, Goiás.</li>
+                <li><b>2003</b> - Aos 8 anos, Marília começa a escrever suas primeiras composições.</li>
+                <li><b>2008</b> - Com 12 anos, grava seu primeiro CD independente, "Marília Mendonça".</li>
+                <li><b>2015</b> - Lança o DVD "Marília Mendonça Ao Vivo em Goiânia". O projeto se torna um dos maiores sucessos do ano e consolida Marília como a "Rainha da Sofrência".</li>
+                <li><b>2017</b> - Faz sua primeira turnê internacional, passando por Portugal, Espanha e Estados Unidos.</li>
+                <li><b>2019</b> - Lança o projeto "Todos os Cantos", gravado em diferentes capitais brasileiras. O projeto é um grande sucesso e rende à Marília mais um Grammy Latino.</li>
+                <li><b>2021</b> - 5 de novembro: Marília Mendonça nos deixou, vítima acidente de avião em Caratinga, Minas Gerais.</li>
+        </div>
+        <div class="div3">
+            <img src="{%static 'images/footer.png'%}" alt="Image" class="imagefooter">
+        </div>
+        </div>
+    
+</body>
+</html>
